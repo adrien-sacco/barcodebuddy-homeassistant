@@ -26,6 +26,7 @@
   "environment": {
     "ATTACH_BARCODESCANNER": "true"
   },
+  "privileged" : ["SYS_ADMIN", "NET_ADMIN", "SYS_MODULE"],
   "schema": {
     "require_api_key": "bool",
     "disable_auth" : "bool",
