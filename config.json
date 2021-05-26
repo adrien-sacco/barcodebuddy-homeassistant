@@ -27,6 +27,7 @@
     "ATTACH_BARCODESCANNER": "true"
   },
   "privileged" : ["SYS_ADMIN", "NET_ADMIN", "SYS_MODULE"],
+  "devices": ["/dev/input/event0"],
   "schema": {
     "require_api_key": "bool",
     "disable_auth" : "bool",
