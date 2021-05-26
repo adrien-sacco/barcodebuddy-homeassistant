@@ -24,7 +24,7 @@
     "curl_allow_insecure_ssl_host": false
   },
   "environment": {
-    "ATTACH_BARCODESCANNER":true
+    "ATTACH_BARCODESCANNER": "true"
   },
   "schema": {
     "require_api_key": "bool",
