@@ -3,7 +3,7 @@
   "version": "dev-docker-based",
   "slug": "bbuddy-grocy",
   "description": "Barcode system for Grocy",
-  "url": "https://github.com/Forceu/barcodebuddy",
+  "url": "https://github.com/adrien-sacco/barcodebuddy",
   "webui": "http://[HOST]:[PORT:80]",
   "panel_icon": "mdi:barcode-scan",
   "startup": "system",
@@ -11,23 +11,23 @@
   "boot": "auto",
   "map": ["config:rw","ssl"],
   "ports": {
-    "80/tcp": 8621
+    "80/tcp": 9192
   },
   "ports_description": {
     "80/tcp": "Web interface"
   },
   "options": {
     "require_api_key": false,
-    "disable_auth": false,
-    "debug": false,
-    "curl_allow_insecure_ssl_ca": false,
-    "curl_allow_insecure_ssl_host": false
+    "disable_auth": true,
+    "debug": true,
+    "curl_allow_insecure_ssl_ca": true,
+    "curl_allow_insecure_ssl_host": true
   },
   "environment": {
     "ATTACH_BARCODESCANNER": "true"
   },
   "privileged" : ["SYS_ADMIN", "NET_ADMIN", "SYS_MODULE"],
-  "devices": ["/dev/input/event0"],
+  "devices": ["/dev/input/event10"],
   "schema": {
     "require_api_key": "bool",
     "disable_auth" : "bool",
