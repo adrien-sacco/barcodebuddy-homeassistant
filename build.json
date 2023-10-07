@@ -1,7 +1,7 @@
 {
   "squash": false,
   "build_from": {
-    "amd64": "f0rc3/barcodebuddy-docker:none"
+    "amd64": "f0rc3/barcodebuddy-docker:v1.8.1.5"
   },
   "args": {}
 }
