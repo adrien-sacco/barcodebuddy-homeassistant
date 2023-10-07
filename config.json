@@ -2,6 +2,7 @@
   "name": "Barcode Buddy for Grocy",
   "version": "dev-docker-based",
   "slug": "bbuddy-grocy",
+  "init": false,
   "description": "Barcode system for Grocy",
   "url": "https://github.com/adrien-sacco/barcodebuddy",
   "webui": "http://[HOST]:[PORT:80]",
@@ -22,7 +23,6 @@
     "debug": true,
     "curl_allow_insecure_ssl_ca": true,
     "curl_allow_insecure_ssl_host": true
-    "init": false
   },
   "environment": {
     "ATTACH_BARCODESCANNER": "true"
