@@ -28,7 +28,7 @@
     "ATTACH_BARCODESCANNER": "true"
   },
   "privileged" : ["SYS_ADMIN", "NET_ADMIN", "SYS_MODULE"],
-  "device": ["/dev/input/event10"],
+  "device": "/dev/input/by-id/usb-0581_011c-event-kbd",
   "schema": {
     "require_api_key": "bool",
     "disable_auth" : "bool",
